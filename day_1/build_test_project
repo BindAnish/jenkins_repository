@@ -1,0 +1,44 @@
+------------------------------------- open jenkins dashbord-------------------------------------------
+
+new item----Enter an item name
+freestyle project ------
+okk-------------
+General --------------
+Description ------------
+git project --------paste git url <https://github.com/BindAnish/java-hello.git>
+Source Code Management-----------
+ git -------- paste url <https://github.com/BindAnish/java-hello.git>
+Build Steps---------
+Execute shell --------- javac myfile.java (right) <javac and project class name >
+save -----------------
+
+agen back ec2 --------search 
+java --version -----------show maltiple java code (install 21 )
+
+agen back jenkins ------------
+build  your project ------------ successfull run (build process complit)
+
+-------------------------------------- ueing webhook project (same project ) ------------------
+open gitgub account -----------------------
+open project repo ----------------
+got setting -------------------
+webhook ---- opstion 
+add newwebhook ----------------- https://YOUR-KILLERCODA-URL/github-webhook/---
+save ------------------
+
+-----------------------------------------------------------------------------------------
+
+agen back jenkins  -----------------------------------------------------
+new item----Enter an item name
+freestyle project ------
+okk-------------
+General --------------
+Description ------------
+git project --------paste git url <https://github.com/BindAnish/java-hello.git>
+Source Code Management-----------
+ git -------- paste url <https://github.com/BindAnish/java-hello.git>
+Triggers------------------------
+GitHub hook trigger for GITScm polling --------------- ok-
+Build Steps-------------------
+Execute shell--------------- java myfile.java -- (right) <java and project class name >
+---------------------------------------------------------------------------------------
