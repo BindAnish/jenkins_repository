@@ -1,6 +1,6 @@
 ---------------------- jenkins install using in Docker -----------------------------------
 
-docker pull jenkins:2.60.3
+docker pull jenkins/jenkins
 docker imagers
 docker ps
 docker run -d --name jenkins -p8080:8080 <image_name>
