@@ -1,0 +1,44 @@
+new item --> name -->freestyle project --> ok.
+------------------nodejs project manual --------------------------------------------------------
+ec2 lounch-------------
+mkdir nodeapp
+cd nodeapp
+touch package.json
+touch index.js
+nano package'json------------------- code
+nano index.js ----------------------code
+cd ..
+npm -v
+node -v
+sudo apt update 
+sudo apt install nodejs
+sudo apt install npm -y
+npm -v
+node -v
+cd nodeapp
+npm install
+npm install -g pm2
+pm2 start index.js
+
+----------------------------------------- useing jenkins -------------------------------------------
+
+----------------------------------------- build ----------------------------------------------------
+
+new item --> name -->freestyle project --> ok.
+setteing > Manage Jenkins --> pluging --> available plugins --> serch --> nodejs .
+setteing > Manage Jenkins --> tools --> NodeJS installations -->Name --> Version . 
+  (((new item --> name -->freestyle project --> ok.)))
+
+agen back  jenkins project . >
+Description > Source Code Management > git >Triggers > GitHub hook trigger for GITScm polling
+>Environment > Provide Node & npm bin/ folder to PATH .> add name ( add defolut ) 
+>>Build Steps > Execute shell.>> 
+
+
+--------------------------- github setup ------------------------------------------------------
+create a new repo 
+repo setting > webhooks > add webhook > http://YOUR_JENKINS_HOST:8080/github-webhook/ >save 
+uppaer ke code code push kro .
+
+---------------------------------------------------------------------------------------------------------
+
