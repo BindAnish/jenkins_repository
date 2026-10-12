@@ -32,7 +32,7 @@ setteing > Manage Jenkins --> tools --> NodeJS installations -->Name --> Version
 agen back  jenkins project . >
 Description > Source Code Management > git >Triggers > GitHub hook trigger for GITScm polling
 >Environment > Provide Node & npm bin/ folder to PATH .> add name ( add defolut ) 
->>Build Steps > Execute shell.>> 
+>>Build Steps > Execute shell.>> npm install
 
 
 --------------------------- github setup ------------------------------------------------------
