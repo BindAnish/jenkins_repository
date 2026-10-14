@@ -1,0 +1,23 @@
+-------------------------- day3 deploy ---------------------------------------------------
+
+open jenkins ----------------------------------
+setting --- plugins -- available pluging -- search (ssh) -- install shh .
+
+setting -- security (credentials ) -- -Stores scoped to Jenkins--global --add credentials -- ssh uasername with private key --
+id (live ec2 - ip adders ) , descripstion ,username ,Private Key  -Enter directly add key (copy keypair and paste )
+ 
+manage jenkins -- system --SSH remote hosts -Hostname (live server ip ) -port - Credentials -- save 
+
+------------------------------------------------------------------------------------
+ jenkins add item - name - freestyle project - Description -Source Code Management (git - paste git url )-
+	> Triggers -- Build after other projects are built ( Projects to watch - add test project ) >>
+	> Environment --Execute shell script on remote host using ssh -- Build Steps (Execute shell script on remote host using ssh)
+	> SSH site ( live ip ) -- Command -  cd /home/ubuntu/nodeapp # path 
+						git pull repo url
+						npm install 
+						npm run 
+						sudo npm install -g pm2
+						pm2 start index.js
+>>> build and save 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
