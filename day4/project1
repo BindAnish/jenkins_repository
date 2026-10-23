@@ -1,0 +1,56 @@
+jenkins install 
+docker install --------- sudo docker install.io -y
+jekins la doker la permistion do .
+mkdir Demo
+cd demo/
+nano package.json ---------------->paste code
+nano index.js -------------------->paste code 
+nano Dockerfile ------------------> create the docker file and write the depedancy 
+
+--------------------------------------------------------------------------------------
+git repo create------------
+create token --------------
+
+-----------------------------------------------------------------------------------------
+git init 
+git origin add remote <repo urel
+
+git add .
+git commit -m "add '
+git push origin main 
+
+-----------------------------------------------------------------------------------------
+jenkins new item >> free stayle 0.  
+ description >> source code >> git  >> tiggar>> webhook >> build  (exqut shell)
+commnad >> sudo docker build -t img .
+  	sudo docker images
+ save >> build .
+
+---------------------------------------------------------------------------------------------
+project 2 -- docker run --------------------------------------------------------
+ 
+jenkis new item >> free stalyal >>
+description >> 
+scm >> none 
+tiggar >> build after tiggar ( project first name)
+ build >> exequt shell >> command >> docker stop <cont-name>|true
+					docker rm <cont-name>|true
+					docker run -d --name jenkins -p80:3000 <img name>
+					docker ps 
+save .
+
+------------------------------------------------------------------------------------------------------------------ 
+project 3 ---------deocker hub push images---------------------------------------------------
+
+ create docker hub account ---------
+ create a new repo ---------
+ create a token -------> account setting > parsonal token >new token > name  - scorl dwon (acess persmition)-repo read,wiite ,delete -- ganaret
+
+jenkis new item >> free stalyal >>
+description >>
+scm >> none
+tiggar >> build after tiggar ( project secound name)
+ build >> exequt shell >> command >> sudo docker login -u usernamr -p token
+					sudo docker tag <imgname > docker uaername/repo name 
+					sudo docker push  docker uaername/repo name
+
