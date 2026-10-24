@@ -1,0 +1,38 @@
+------------------------- zip project -------------------------------------------- ye project power shel  pe kare --------------
+mkdir html-project
+nano index.html
+nano home.html
+scp -i .dwonload/git.pem .dwonload/git.pem ubuntu@13.233.100.50:/html_project  # is comand se local laptop se ec2 instans me .pem ke copy hojaye gi auto maticaly
+is comand se local se remote file  copy karne ke liye karte hai.
+
+ 
+		Command part	Matlab
+		scp	Securely file copy karna
+		-i	Private key file specify karna
+		.dwonload/git.pem (pehla)	SSH authentication ke liye private key
+		.dwonload/git.pem (doosra)	Copy karne wali file
+		ubuntu	Remote Ubuntu server ka username
+		13.233.100.50	EC2 server ka public IP address
+		:/html_project	Server par destination folder
+
+
+ls 
+git init
+git remote add origin github link 
+dit add .
+git commit -m"add html foldaer "
+git push origin master
+
+-------------------------------repo ---------------------------------------------------------------
+create new repo in github account 
+set webhook --------
+create new token-----------
+------------------------------- jenkins set up ------------------------------------------------------
+new item >> free stayil.
+
+dashbord   >>	src - git 	>> 	trigar - webhook 	>> 	build - exquite shell >> command 
+	sudo apt install zip 
+	zip mye=web.zip ./*html
+
+-------------------------------------------------------------------------------------------------------------- 
+haf projact done -------------------------------------------------------------------------
