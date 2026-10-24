@@ -1,0 +1,26 @@
+two ec2 instanses -----------------------------------------
+1 one jenkins setup 
+2 secound live server
+
+------------------------------------------------------------
+project 1 ------------ onley  build Deocker file ------------
+project 2 ------------ create a conater useing build image---
+project 3 ------------ pull docker hub account build image --
+project 4 ------------ host live ----------------------------steps
+
+ec2 instans lounch  < liveserver >
+
+secound one  jenkins server >> 
+	jenkins managment--system -- shh -- liveserver ip addres past .
+
+
+	jenkins -- new item -- frees staayal 
+	description (   ..) -- src none () -- triggar (build after triggar step - project 3 name ) -- build steps ( execut shell script on remote host shh - ssh site ) --command 
+		sudo apt update 
+		sudo apt install docker .io -y
+		sudo aservice docker start 
+		sudo docker stop <cont-name>|ture
+		sudo docker rm <cont-name> |true
+		sudo docker run-d --name project4 -p80:3000 <img name>  # image aaivagi docker hub je push kel tic navtaka (docker hub cy repo made bhetel)
+		sudo docker ps 
+
